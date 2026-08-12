@@ -192,7 +192,7 @@
         <a href="https://www.linkedin.com/in/byunghoon-david-kang-685114105" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
           <svg viewBox="0 0 24 24" role="img"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
-        <a class="cv-inline" href="https://drive.google.com/file/d/1cDpeQRUR1VEXhTtNYKSEGq6rUeIgjsCr/view" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a>
+        <a class="cv-inline" href="CV_Kang.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a>
       </div>
     </div>
     <img class="avatar" src="profile.jpg" alt="Byunghoon Kang" onerror="this.style.display='none'">
@@ -220,7 +220,7 @@
       <div class="meta">May 2026</div>
       <div class="actions">
         <button class="abs-btn" aria-expanded="false">Abstract</button>
-        <a href="https://drive.google.com/file/d/1OhGh-cUAW42vBve1mFl-VAvn8A9kk7z7/view?usp=drive_link" target="_blank" rel="noopener">PDF</a>
+        <a href="papers/EfficientGMM_misspecification_2026.pdf" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2605.04961" target="_blank" rel="noopener">arXiv</a>
       </div>
       <div class="abstract" hidden>This paper develops efficient GMM estimation when the moment conditions are misspecified. We observe that the influence function of the standard GMM estimator under misspecification depends on both the original moment conditions and their Jacobian, motivating a new class of estimators based on augmented moment conditions with recentering. The standard GMM estimator is a special case within this class, and generally suboptimal. By optimally weighting the augmented system, we obtain a misspecification-efficient (ME) estimator with the smallest asymptotic variance for the same GMM pseudo-true value. In linear models, the asymptotic variance of the ME estimator reduces to the textbook efficient-GMM variance formula (G&prime;W*G)<sup>&minus;1</sup>, where W* is the inverse of the variance of residualized moments after projection on the Jacobian G. We consider a feasible double-recentered bootstrap estimator, which can be considered as a misspecification-robust and efficient version of Hall and Horowitz (1996) recentered bootstrap GMM estimator, and also consider a split-sample ME estimator. Finally, we establish uniform local asymptotic minimax bounds over a class of weighting matrices. We illustrate the proposed methods in simulation and empirical examples.</div>
@@ -231,25 +231,23 @@
       <div class="auth">with Seojeong Lee, May 2026</div>
       <div class="actions">
         <button class="abs-btn" aria-expanded="false">Abstract</button>
-        <a href="https://drive.google.com/file/d/1cKVU8RR8Hh6g4_iJyEw6a7L51Ba1kb9q/view?usp=drive_link" target="_blank" rel="noopener">PDF</a>
+        <a href="papers/NonsmoothGMM.pdf" target="_blank" rel="noopener">PDF</a>
       </div>
-      <!-- TODO: paste the abstract for this paper between the tags below -->
-      <div class="abstract" hidden>Abstract coming soon.</div>
+      <div class="abstract" hidden>This paper develops an asymptotic distribution theory for Generalized Method of Moments (GMM) estimators, including the one-step and iterated estimators, when the moment conditions are nonsmooth and possibly misspecified. We consider nonsmooth moment functions that are directionally differentiable&mdash;such as absolute value functions and functions with kinks&mdash;but not indicator functions. While GMM estimators remain &radic;n-consistent and asymptotically normal for directionally differentiable moments, conventional GMM variance estimators are inconsistent under moment misspecification. We propose a consistent estimator for the asymptotic variance for valid inference. Additionally, we show that the nonparametric bootstrap provides asymptotically valid confidence intervals. Our theory is applied to quantile regression with endogeneity under the location-scale model, offering a robust inference procedure for the GMM estimators in Machado and Santos Silva (2019). Simulation results support our theoretical findings.</div>
     </div>
 
     <div class="item">
-      <div class="title">A Note on the Asymptotic Size of Leamer's Extreme Bounds Analysis</div>
-      <div class="auth">with Dimitris Gkountanis, September 2025</div>
+      <div class="title">On the Asymptotic Size of Leamer's Extreme Bounds Analysis</div>
+      <div class="auth">with Dimitris Gkountanis, August 2026</div>
       <div class="actions">
         <button class="abs-btn" aria-expanded="false">Abstract</button>
-        <a href="https://drive.google.com/file/d/1mtwNcv1vgATvI5rkApS4R-g1Q5SXadwf/view?usp=drive_link" target="_blank" rel="noopener">PDF</a>
+        <a href="papers/LeamerEBA_web.pdf" target="_blank" rel="noopener">PDF</a>
       </div>
-      <!-- TODO: paste the abstract for this paper between the tags below -->
-      <div class="abstract" hidden>Abstract coming soon.</div>
+      <div class="abstract" hidden>We revisit Leamer's Extreme Bounds Analysis (EBA), a method for assessing whether a coefficient of interest is robust across a range of model specifications. We analyze the EBA in a classical hypothesis testing framework, and show that it is related to a test based on the minimum absolute <em>t</em>-statistic across the submodels. We show that the original EBA, which labels a variable &ldquo;robust&rdquo; only if its estimated coefficient is statistically significant with the same sign in all models considered, is asymptotically conservative when the standard normal critical value (e.g., 1.96) is used. We propose a modified EBA procedure that utilizes a restricted wild bootstrap to obtain critical values from the sampling distribution of the minimum absolute <em>t</em>-statistic, and show that it provides asymptotically valid size control. Monte Carlo experiments confirm the theoretical findings, and we revisit Levine and Renelt (1992, AER) as an illustrative example.</div>
     </div>
 
     <div class="item">
-      <div class="title">Robust Inference for Smoothed Instrumental Variables Quantile Regression</div>
+      <div class="title">Rate Adaptive Inference for Smoothed Instrumental Variable Quantile Regression</div>
       <div class="auth">with Seojeong Lee</div>
     </div>
 
@@ -270,10 +268,6 @@
       <div class="title">Criterion-Based Model Averaging</div>
       <div class="auth">with Seojeong Lee</div>
     </div>
-
-    <div class="item">
-      <div class="title">Smoothing Parameter Robust Inference for Semiparametric Estimators</div>
-    </div>
   </section>
 
   <!-- PUBLICATIONS -->
@@ -285,7 +279,7 @@
       <div class="meta">Econometric Theory, 2021, 37(2), 311&ndash;345</div>
       <div class="actions">
         <button class="abs-btn" aria-expanded="false">Abstract</button>
-        <a href="https://drive.google.com/file/d/14M-tl2Dj3rOZzlPNAg67wecHK3MaftNc/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+        <a href="papers/ET-4015%20manuscript_Final_modified.pdf" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/1909.12162" target="_blank" rel="noopener">arXiv</a>
         <a href="https://www.cambridge.org/core/journals/econometric-theory/article/inference-in-nonparametric-series-estimation-with-specification-searches-for-the-number-of-series-terms/8112698259D6E213EA068D28E9FE32AB" target="_blank" rel="noopener">Journal</a>
         <a href="https://doi.org/10.1017/S0266466620000158" target="_blank" rel="noopener">DOI</a>
@@ -301,11 +295,11 @@
       <div class="actions">
         <button class="abs-btn" aria-expanded="false">Abstract</button>
         <button class="stata-btn" aria-expanded="false">Stata command</button>
-        <a href="https://drive.google.com/file/d/1BCC608-MZ5r-BzP3oF5CFPjBtStB08jo/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+        <a href="papers/HKL_Sep3-2020.pdf" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/1908.07821" target="_blank" rel="noopener">arXiv</a>
         <a href="https://doi.org/10.1016/j.jeconom.2020.09.010" target="_blank" rel="noopener">Journal</a>
       </div>
-      <div class="abstract" hidden>We propose a new finite sample corrected variance estimator for the linear generalized method of moments (GMM) including the one-step, two-step, and iterated estimators. Our formula additionally corrects for the over-identification bias in variance estimation on top of the commonly used finite sample correction of Windmeijer (2005) which corrects for the bias from estimating the efficient weight matrix, so is doubly corrected. An important feature of the proposed double correction is that it automatically provides robustness to misspecification of the moment condition. In contrast, the conventional variance estimator and the Windmeijer correction are inconsistent under misspecification. That is, the proposed double correction formula provides a convenient way to obtain improved inference under correct specification and robustness against misspecification at the same time.</div>
+      <div class="abstract" hidden>We propose a new finite sample corrected variance estimator for the linear generalized method of moments (GMM) including the one-step, two-step, and iterated estimators. Our formula also corrects the over-identification bias in variance estimation on top of the commonly used finite sample correction of Windmeijer (2005), which corrects the bias from estimating the efficient weight matrix, so is <em>doubly</em> corrected. An important feature of the proposed double correction is that it automatically provides robustness to misspecification of the moment condition. In contrast, the conventional variance estimator and the Windmeijer correction are inconsistent under misspecification. That is, the double correction formula proposed in this paper provides a convenient way to obtain improved inference under correct specification and robustness against misspecification at the same time.</div>
       <div class="stata" hidden>
         <p>The following commands calculate the doubly-corrected SE (misspecification-robust and finite-sample corrected).</p>
         <ul>
@@ -320,12 +314,11 @@
       <div class="meta">Econometric Theory, 2024, 40(4), 752&ndash;789</div>
       <div class="actions">
         <button class="abs-btn" aria-expanded="false">Abstract</button>
-        <a href="https://drive.google.com/file/d/12IQDhg46G4c3LziCCk_sC2R8X94Q4sds/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+        <a href="papers/CSIMI_revision.pdf" target="_blank" rel="noopener">PDF</a>
         <a href="https://www.doi.org/10.1017/S0266466622000597" target="_blank" rel="noopener">Journal</a>
         <a href="https://drive.google.com/file/d/1756uYo5KpvXTsu7RHx59X4xdJ6d03OJl/view?usp=sharing" target="_blank" rel="noopener">Supplement</a>
       </div>
-      <!-- TODO: paste the abstract for this paper between the tags below -->
-      <div class="abstract" hidden>Abstract coming soon.</div>
+      <div class="abstract" hidden>This paper analyzes the higher-order approximation of instrumental variable (IV) estimators in a linear homoskedastic IV regression model when a large set of instruments with potential invalidity is present. We establish theoretical results on the higher-order mean square error (MSE) approximation of the two-stage least squares (2SLS), the limited information maximum likelihood (LIML), the Fuller (FULL), the bias-adjusted 2SLS (B2SLS), and jackknife version of the LIML and FULL (HLIM/HFUL) estimators by allowing for local violations of the instrument exogeneity conditions. Based on the approximation to the higher-order MSE, we consider the instrument selection criteria that can be used to choose among the set of available instruments. We demonstrate the asymptotic optimality of the instrument selection procedure proposed by Donald and Newey (2001, <em>Econometrica</em>) in the presence of locally (faster than <em>N</em><sup>&minus;1/2</sup>) invalid instruments in the sense that the dominant term in the MSE with the chosen instrument is asymptotically equivalent to the infeasible optimum. Further, we propose instrument selection procedures to choose instruments among the sets of conservative (known) valid instruments and potentially locally (<em>N</em><sup>&minus;1/2</sup>) invalid instruments based on the higher-order MSE of the IV estimators by considering the bias-variance tradeoff.</div>
     </div>
 
     <div class="item">
@@ -334,9 +327,10 @@
       <div class="meta">Seoul Journal of Economics, 2025, 38(1), 29&ndash;49</div>
       <div class="actions">
         <button class="abs-btn" aria-expanded="false">Abstract</button>
-        <a href="https://arxiv.org/pdf/2501.09540" target="_blank" rel="noopener">PDF</a>
+        <a href="papers/2501.09540v1.pdf" target="_blank" rel="noopener">PDF</a>
+        <a href="https://arxiv.org/abs/2501.09540" target="_blank" rel="noopener">arXiv</a>
       </div>
-      <div class="abstract" hidden>The asymptotic behavior of GMM estimators depends critically on whether the underlying moment condition model is correctly specified. Hong and Li (2023, Econometric Theory) showed that GMM estimators with nonsmooth (non-directionally differentiable) moment functions are at best n^{1/3}-consistent under misspecification. Through simulations, we verify the slower convergence rate of GMM estimators in such cases. For the two-step GMM estimator with an estimated weight matrix, our results align with theory. However, for the one-step GMM estimator with the identity weight matrix, the convergence rate remains &radic;n, even under severe misspecification.</div>
+      <div class="abstract" hidden>The asymptotic behavior of GMM estimators depends critically on whether the underlying moment condition model is correctly specified. Hong and Li (2023, Econometric Theory) showed that GMM estimators with nonsmooth (non-directionally differentiable) moment functions are at best <em>n</em><sup>1/3</sup>-consistent under misspecification. Through simulations, we verify the slower convergence rate of GMM estimators in such cases. For the two-step GMM estimator with an estimated weight matrix, our results align with theory. However, for the one-step GMM estimator with the identity weight matrix, the convergence rate remains &radic;n, even under severe misspecification.</div>
     </div>
   </section>
   </div>
@@ -349,6 +343,7 @@
       <h3>Lancaster University</h3>
       <ul class="teach-list">
         <li>Microeconometrics (Ph.D.) <span class="when">&mdash; 2016&ndash;present</span></li>
+        <li>Econometrics and Data Analysis (MSc) <span class="when">&mdash; Fall 2024&ndash;present</span></li>
         <li>Time Series (Ph.D.) <span class="when">&mdash; 2018</span></li>
         <li>Econometrics (UG, third year) <span class="when">&mdash; Fall 2016&ndash;present</span></li>
         <li>Data Science in Economics (UG, third year) <span class="when">&mdash; 2022&ndash;2024</span></li>
