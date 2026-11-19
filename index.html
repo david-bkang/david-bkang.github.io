@@ -58,13 +58,14 @@
     .nav-links a:hover{color:var(--accent);}
 
     /* ---- Layout ---- */
-    .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+    .wrap{max-width:var(--maxw); margin:0 auto; padding-left:24px; padding-right:24px;}
 
-    header.hero{padding:64px 0 40px; display:flex; align-items:center; gap:32px;}
+    header.hero{padding-top:64px; padding-bottom:40px; display:flex; align-items:center; gap:32px;}
     .hero-text{flex:1; min-width:0;}
     .hero h1{font-family:var(--serif); font-size:42px; line-height:1.12; margin:0 0 8px; font-weight:600; letter-spacing:-.01em;}
     .hero .sub{font-size:19px; color:var(--muted); margin:0 0 2px;}
     .hero .aff{font-size:17px; color:var(--muted); margin:0;}
+    .hero h1, .hero .sub, .hero .aff{text-wrap:balance;}
     .hero .fields{font-size:14px; color:var(--accent); margin-top:12px; letter-spacing:.01em; font-weight:500;}
     .avatar{
       width:152px; height:152px; border-radius:50%;
@@ -96,6 +97,7 @@
       margin:0 0 26px;
     }
     section p{margin:0 0 16px;}
+    section > p:last-child{margin-bottom:0;}
 
     /* ---- Publication / paper items ---- */
     .item{margin:0 0 30px;}
@@ -154,8 +156,9 @@
     footer .credit{display:inline-block; margin-top:6px; font-size:12px; letter-spacing:.01em;}
 
     @media (max-width:560px){
-      .hero{flex-direction:column-reverse; align-items:flex-start; gap:20px; padding-top:44px;}
-      .hero h1{font-size:34px;}
+      header.hero{flex-direction:column-reverse; align-items:flex-start; gap:20px; padding-top:44px;}
+      #about p{font-size:16px; text-align:justify; -webkit-hyphens:auto; hyphens:auto; text-wrap:pretty;}
+      .hero h1{font-size:clamp(26px, 7.8vw, 34px);}
       .avatar{width:118px; height:118px;}
       .nav-links{gap:16px;}
       .nav-name{display:none;}
@@ -185,7 +188,7 @@
       <h1>Byunghoon (David) Kang</h1>
       <p class="sub">Associate Professor of Economics</p>
       <p class="aff">Department of Economics, Lancaster University</p>
-      <p class="fields">Econometric Theory&nbsp;&middot;&nbsp;Applied Econometrics&nbsp;&middot;&nbsp;Machine Learning for Causal Inference</p>
+      <p class="fields">Econometric Theory&nbsp;&middot;&nbsp;Applied Econometrics<br>Machine Learning for Causal Inference</p>
       <div class="social">
         <a href="https://scholar.google.com/citations?user=pqnerA0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
           <svg viewBox="0 0 24 24" role="img"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
@@ -202,13 +205,14 @@
   <!-- ABOUT -->
   <section id="about" class="wrap">
     <h2>About</h2>
+    <!-- &shy; = optional hyphen: invisible unless a phone-width line breaks there -->
     <p>I am an Associate Professor in the Department of Economics at Lancaster University.
-       My research is in econometrics, with a focus on econometric theory and its applications
-       in microeconometrics.</p>
-    <p>My work studies IV/GMM models under misspecification, non- and semiparametric estimation,
-       machine learning methods for causal inference such as double/debiased machine learning,
-       and inference in high-dimensional econometric models&mdash;including the
-       challenges of conducting valid inference when models are misspecified. My research has
+       My research is in econo&shy;metrics, with a focus on econo&shy;metric theory and its applications
+       in micro&shy;econo&shy;metrics.</p>
+    <p>My work studies IV/GMM models under mis&shy;specifi&shy;cation, non- and semi&shy;para&shy;metric estimation,
+       machine learning methods for causal inference such as double/<wbr>debiased machine learning,
+       and inference in high-dimensional econo&shy;metric models&mdash;including the
+       challenges of conducting valid inference when models are mis&shy;specified. My research has
        appeared in <em>Econometric Theory</em> and the <em>Journal of Econometrics</em>.</p>
   </section>
 
