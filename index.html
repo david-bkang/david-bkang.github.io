@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Byunghoon (David) Kang — Econometrics, Lancaster University</title>
-  <meta name="description" content="Byunghoon (David) Kang, Associate Professor of Economics at Lancaster University. Research in econometric theory and applied econometrics.">
+  <meta name="description" content="Byunghoon (David) Kang, Associate Professor of Economics at Lancaster University. Research in econometric theory, applied econometrics, and machine learning for causal inference.">
 
   <!-- Free fallbacks for Anthropic's proprietary Styrene / Tiempos.
        If you self-host the real fonts, the stack below picks them up first. -->
@@ -185,7 +185,7 @@
       <h1>Byunghoon (David) Kang</h1>
       <p class="sub">Associate Professor of Economics</p>
       <p class="aff">Department of Economics, Lancaster University</p>
-      <p class="fields">Econometric Theory&nbsp;&middot;&nbsp;Applied Econometrics</p>
+      <p class="fields">Econometric Theory&nbsp;&middot;&nbsp;Applied Econometrics&nbsp;&middot;&nbsp;Machine Learning for Causal Inference</p>
       <div class="social">
         <a href="https://scholar.google.com/citations?user=pqnerA0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
           <svg viewBox="0 0 24 24" role="img"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
@@ -206,7 +206,8 @@
        My research is in econometrics, with a focus on econometric theory and its applications
        in microeconometrics.</p>
     <p>My work studies IV/GMM models under misspecification, non- and semiparametric estimation,
-       and inference in high-dimensional econometric models and causal inference&mdash;including the
+       machine learning methods for causal inference such as double/debiased machine learning,
+       and inference in high-dimensional econometric models&mdash;including the
        challenges of conducting valid inference when models are misspecified. My research has
        appeared in <em>Econometric Theory</em> and the <em>Journal of Econometrics</em>.</p>
   </section>
@@ -222,6 +223,7 @@
       <div class="actions">
         <button class="abs-btn" aria-expanded="false">Abstract</button>
         <a href="papers/Robust%20DDML-GMM.pdf" target="_blank" rel="noopener">PDF</a>
+        <a href="https://arxiv.org/abs/2611.17578" target="_blank" rel="noopener">arXiv</a>
       </div>
       <div class="abstract" hidden>We develop Neyman orthogonal scores for GMM models that remain valid when the moment conditions may fail to hold. Existing score constructions typically require the moment conditions to hold exactly, which may fail in over-identified models, where the number of moment functions exceeds the number of parameters. We construct misspecification-robust orthogonal score that has a closed form; it is the conventional orthogonal score plus adjustment terms, for the estimation of the Jacobian and of the weighting matrix, which are proportional to the population moment and vanish under correct specification. The moment functions may depend on nonparametric or machine learning first steps, and we show that double/debiased machine learning (DML) combined with the proposed scores and cross-fitting provides uniformly valid inference for a low-dimensional GMM estimand, while the conventional DML standard errors are inconsistent when the moment conditions fail. We illustrate the results in the partially linear instrumental variables (PLIV) model and in the local average treatment effects (LATE) model with multiple instruments.</div>
     </div>
@@ -239,7 +241,7 @@
     </div>
 
     <div class="item">
-      <div class="title">Robust Inference for Entropy Balancing</div>
+      <div class="title">Inference after Entropy Balancing</div>
       <div class="auth">with Seojeong Lee and Samuel Engle, September 2026</div>
     </div>
 
